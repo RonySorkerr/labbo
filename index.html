@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <!-- home screen  -->
+  <section>
+    <div class="hidden" id="homeScreen">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love8.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-white text-3xl lg:text-5xl">ও গো মোর মহারাণী..! <br> আপনি কি আমাকে সবচেয়ে বেশি
+            ভালোবাসেন?</h1>
+          <!-- options -->
+          <div class="flex justify-around">
+            <button onclick="nextScreen('homeScreen', 'nextScreen')" id="yes1" class="btn border-t-pink-500 bg-white text-red-600 text-xl">Yes</button>
+            <button onclick="nextScreen('homeScreen', 'nextScreen')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen 2 -->
+  <section>
+    <div class="hidden" id="nextScreen">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love2.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#ff3939] text-3xl lg:text-5xl">আপনি আমাকে কতটুকু ভালোবাসেন?</h1>
+          <div class="flex justify-around">
+            <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">&#8734;</button>
+            <button onclick="nextScreen('nextScreen', 'screen3')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">একটুও না</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen3 -->
+  <section>
+    <div class="hidden" id="screen3">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love2.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#ff3939] text-3xl lg:text-5xl">আপনি কি আমাকে লবণের ভালোবাসেন?</h1>
+          <div class="flex justify-around">
+            <button onclick="nextScreen('screen3', 'screen4')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">Yes প্রিয়</button>
+            <button onclick="nextScreen('screen3', 'screen4')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">একদমই না</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen4 -->
+  <section>
+    <div class="hidden" id="screen4">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love4.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#39ff6b] text-3xl lg:text-5xl">আপনি কি আমার জন্য সব ত্যাগ করতে পারবেন?</h1>
+          <div class="flex justify-around">
+            <button onclick="nextScreen('screen4', 'screen5')" id="" class="btn border-t-pink-500 bg-white text-[#ff4141] text-2xl">জ্বি অবশ্যই</button>
+            <button onclick="nextScreen('screen4', 'screen5')" id="" class="btn border-t-pink-500 bg-white text-[#ff4141] text-xl">না পারতাম না</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen 5 -->
+  <section>
+    <div class="hidden" id="screen5">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love11.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#ff4bf6] text-3xl lg:text-5xl">সারাক্ষণ আমার কথা মনে পড়ে তাই না?</h1>
+          <div class="flex justify-around">
+            <button onclick="nextScreen('screen5', 'screen6')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">জ্বি</button>
+            <button onclick="nextScreen('screen5', 'screen6')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">একটুুও না</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- screen 6 -->
+  <section>
+    <div class="hidden" id="screen6">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love14.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#000000] text-3xl lg:text-5xl">আমার গোলাপটা কে?</h1>
+          <div class="flex justify-between">
+            <button onclick="nextScreen('screen6', 'screen7')" id="" class="btn border-t-pink-500 bg-white text-[#1b682e] text-xl">আমিইতো</button>
+            <button onclick="nextScreen('screen6', 'screen7')" id="" class="btn border-t-pink-500 bg-white text-[#1b682e] text-xl">আপনার পচাডা</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen 7 -->
+  <section>
+    <div class="hidden" id="screen7">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love16.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#ffffff] text-3xl lg:text-5xl">আমারে আপনার কোন নামে ডাকতে ভালো লাগে?</h1>
+          <div class="flex justify-around">
+            <button onclick="nextScreen('screen7', 'screen8')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">জান</button>
+            <button onclick="nextScreen('screen7', 'screen8')" id="" class="btn border-t-pink-500 bg-white text-red-600 text-xl">পচা</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen 8 -->
+  <section>
+    <div class="hidden" id="screen8">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love15.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#ffffff] text-3xl lg:text-5xl">আমার তিলডিরে আদর করেন নি?</h1>
+          <div class="flex justify-between">
+            <button onclick="nextScreen('screen8', 'screen9')" id="" class="btn border-t-pink-500 bg-white text-black text-xl">খালি কিলাই</button>
+            <button onclick="nextScreen('screen8', 'screen9')" id="" class="btn border-t-pink-500 bg-white text-[#000000] text-xl">জ্বি অনেক আদর করি</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen 9 -->
+  <section>
+    <div class="hidden" id="screen9">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love15.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#ffffff] text-3xl lg:text-5xl">আমারে কাছে পাইলে কি করবেন?</h1>
+          <div class="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-around">
+            <button onclick="nextScreen('screen9', 'screen10')" id="" class="btn border-t-pink-500 bg-white text-black text-xl">আদর করমু</button>
+            <button onclick="nextScreen('screen9', 'screen10')" id="" class="btn border-t-pink-500 bg-white text-[#000000] text-base">আম্মু আর আমি খালি বকমু</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen 10 -->
+  <section>
+    <div class="hidden" id="screen10">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love17.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#ffffff] text-3xl lg:text-5xl">আজকে কিন্তু আমার ঠোট, তিল, বুক, পেট, নাভী আর যা যা আছে সব লাগব</h1>
+          <div class="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-around">
+            <button onclick="nextScreen('screen10', 'screen11')" id="" class="btn border-t-pink-500 bg-white text-black">জি, সবইতো আপনার</button>
+            <button onclick="nextScreen('screen10', 'screen11')" id="" class="btn border-t-pink-500 bg-white text-[#000000]">না, খালি কিলামু</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen 11 -->
+  <section>
+    <div class="hidden" id="screen11">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/love18.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-center text-[#ffffff] text-3xl lg:text-5xl">আমার এখনই 101 লাগব।</h1>
+          <div class="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-around">
+            <button onclick="nextScreen('screen10', 'screenyes')" id="yes" class="btn border-t-pink-500 bg-white text-black">জি, এখনই দিতাছি</button>
+            <button onclick="nextScreen('screen10', 'screenno')" id="no" class="btn border-t-pink-500 bg-white text-[#000000]">না, দিতাম না</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen yes -->
+  <section>
+    <div class="hidden" id="screenyes">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/labbp.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-[#fffefe] text-center text-xl font-extrabold">আমি আমার মহারাণীটারে ছাড়া একটা মুহুর্তও থাকতে পারি না। সে খালি আমারে জ্বালায়। কিন্তু তারে নিয়া নানান স্বপ্ন দেথতে আমার  এতো ভালো লাগে। খালি মনে চায় তারে আগলাইয়া ধইরা রাখি। অনেক ভালোবাসি আমি আমার মহারাণীটারে।</h1>
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- screen no -->
+  <section>
+    <div class="" id="screenno">
+      <!-- container -->
+      <div class="min-h-screen bg-cover bg-no-repeat bg-center flex mx-auto items-center justify-center"
+        style="background-image: url('imgs/ummma.jpg');">
+        <!-- contents -->
+        <div class="p-4 space-y-20">
+          <h1 class="text-[#000000] text-2xl text-center font-extrabold">যদি খালি না পাই দেইখেন মাইরাই লামু কামড়াইতে কামড়াইতে।</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    function nextScreen(id, id2) {
+      const element = document.getElementById(id);
+      const element2 = document.getElementById(id2)
+      element.classList.add('hidden')
+      element2.classList.remove('hidden')
+    }
+    const labb0 = document.getElementById('yes');
+    const notlabbo = document.getElementById('no');
+    
+
+  </script>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
